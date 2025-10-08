@@ -1,6 +1,6 @@
-📌 Source Code Management (SCM) & Git Cheatsheet
+### 📌 Source Code Management (SCM) & Git Cheatsheet
 
-1️⃣ Source Code Management (SCM)
+## 1️⃣ Source Code Management (SCM)
 🔹 Types of SCM:
 
 1. Centralized Version Control System (CVCS):
@@ -76,11 +76,13 @@ Default branch → master or main.
 Work is isolated until merged.
 
 🔧 Common Branch Commands:
+```bash
 git branch              # List branches
 git branch feature-x    # Create branch
 git checkout feature-x  # Switch branch
 git merge feature-x     # Merge branch into current
 git branch -d feature-x # Delete branch
+```
 
 
 👉 Best practice: Always create a new branch for features/bugs, then merge via Pull Request.
@@ -98,6 +100,7 @@ Stage changes → git add <file>
 Commit merge → git commit
 
 Helpful Commands:
+```bash
 
 git log --merge → see conflicting commits
 
@@ -106,43 +109,55 @@ git diff → view differences
 git merge --abort → stop merge
 
 git reset --hard → reset changes
+```
 
 7️⃣ Basic Git Commands (Daily Use)
 # Setup identity
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
+```
 
 # Start project
+```bash
 git init              # Initialize repo
 git clone <url>       # Clone remote repo
+```
 
 # Workflow
+```bash
 git add <file>        # Stage file
 git add .             # Stage all files
 git commit -m "msg"   # Commit staged changes
 git status            # Check status
 git log               # View commit history
+```
 
 # Remote
+```bash
 git remote -v
 git remote add origin <url>
 git push origin main
 git pull origin main
+```
 
 8️⃣ Advanced Git Features
 🔹 Git Stash (Save work temporarily)
+```bash
 git stash          # Save current changes
 git stash list     # Show stashes
 git stash apply    # Reapply stash
 git stash pop      # Apply + remove stash
 git stash drop     # Delete stash
-
+```
 🔹 Cherry-Pick (Pick single commit)
+```bash
 git cherry-pick <commit_hash>
-
+```
 🔹 Rebase (Clean history)
+```bash
 git rebase main
-
+```
 
 Moves commits on top of another branch.
 
