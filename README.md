@@ -1,6 +1,6 @@
-###📌 Source Code Management (SCM) & Git Cheatsheet
+### 📌 Source Code Management (SCM) & Git Cheatsheet
 
-##1️⃣ Source Code Management (SCM)
+## 1️⃣ Source Code Management (SCM)
 🔹 Types of SCM:
 
 1. Centralized Version Control System (CVCS):
