@@ -76,11 +76,13 @@ Default branch → master or main.
 Work is isolated until merged.
 
 🔧 Common Branch Commands:
+```bash
 git branch              # List branches
 git branch feature-x    # Create branch
 git checkout feature-x  # Switch branch
 git merge feature-x     # Merge branch into current
 git branch -d feature-x # Delete branch
+```
 
 
 👉 Best practice: Always create a new branch for features/bugs, then merge via Pull Request.
